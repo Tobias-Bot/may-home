@@ -4,12 +4,13 @@ body {
 }
 
 /* ::-webkit-scrollbar-track {
-  background-color: rgb(37, 37, 51);
+  background-color: rgba(0, 0, 0, 0.1);
 }
+
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   border-radius: 100px;
-  background-color: rgba(172, 163, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 } */
 
 ::-webkit-scrollbar {

@@ -65,12 +65,7 @@ export default {
 
   created() {
     this.getInitialProps();
-
-    // bridge.send("VKWebAppStorageSet", {"key": "test", "value": "iphone"}).then((res) => {
-    //   console.log(res);
-    // });
   },
-
   methods: {
     getInitialProps() {
       const str = window.location.search.slice(1);
