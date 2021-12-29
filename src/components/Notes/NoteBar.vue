@@ -16,6 +16,7 @@
             <v-card
               :color="note.color"
               :class="{ activeCard: active, card: !active }"
+              style="border-radius: 5px"
               height="70"
               width="150"
               @click="
@@ -25,7 +26,7 @@
                 }
               "
             >
-              <div v-if="!active" class="cardText">
+              <div v-if="!active" class="noteText">
                 <div v-if="isFull(note.text)">
                   {{ note.text.substring(0, 55) }}...
                 </div>
@@ -135,13 +136,18 @@
       <br />
     </div>
 
-    <div
-      v-if="(model == null || !notes.length) && notes.length < maxNotesCount"
-      class="addCardBtn"
-      @click="addNote"
-    >
-      <v-icon light size="16">mdi-note-plus-outline</v-icon> добавить заметку
-    </div>
+    <v-row justify="center">
+      <v-btn
+        v-if="(model == null || !notes.length) && notes.length < maxNotesCount"
+        class="addCardBtn"
+        light
+        text
+        small
+        @click="addNote"
+      >
+        <v-icon light>mdi-note-plus-outline</v-icon>
+      </v-btn>
+    </v-row>
   </v-container>
 </template>
 

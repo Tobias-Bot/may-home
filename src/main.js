@@ -6,7 +6,9 @@ import vuetify from "./plugins/vuetify";
 import bridge from "@vkontakte/vk-bridge";
 
 import "./styles/Common.css";
+import "./styles/MainMenuModal.css";
 import "./styles/NoteBar.css";
+import "./styles/TestControlPanel.css";
 
 bridge.send("VKWebAppInit", {});
 
